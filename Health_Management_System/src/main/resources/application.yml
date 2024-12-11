@@ -1,0 +1,32 @@
+mail:
+  host: smtp.gmail.com
+  password: nmacpnonnvxcertj
+  port: 587
+  username: amazon01ankit@gmail.com
+server:
+  port: 9292
+spring:
+  application:
+    name: HealthBridge
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: coditas
+    url: jdbc:postgresql://localhost:5432/HealthBridge
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 2MB
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  packages-to-scan: com.example.HealthBridge.controller
+  show-actuator: true
+  swagger-ui:
+    enable: true
+    path: /swagger-ui.html
